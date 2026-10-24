@@ -1,0 +1,77 @@
+#gameover-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.gameover-card {
+  border: 2px solid;
+  padding: 3rem 4rem;
+  text-align: center;
+  background: var(--bg2);
+  max-width: 480px;
+  width: 100%;
+}
+
+.gameover-win { border-color: var(--color-gold); }
+.gameover-lose { border-color: var(--color-red); }
+
+.gameover-icon { font-size: 4rem; margin-bottom: 0.75rem; }
+
+.gameover-title {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+}
+
+.gameover-win .gameover-title { color: var(--color-gold); }
+.gameover-lose .gameover-title { color: var(--color-red); }
+
+.gameover-message {
+  color: var(--color-text-dim);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.gameover-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-label {
+  font-family: var(--font-title);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--color-text-dim);
+}
+
+.stat-value {
+  font-family: var(--font-title);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-bright);
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border-bright);
+}
+
+.gameover-btn { width: 100%; }

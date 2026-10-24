@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap");
+
+/* ── CSS Variables ─────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg:  #060d1a;
+  --bg2: #0c1626;
+  --bg3: #122035;
+
+  /* Borders */
+  --border:        #1e3a5f;
+  --border-bright: #2a5a8f;
+
+  /* Text */
+  --color-text:        #c8d8e8;
+  --color-text-dim:    #5a7a9a;
+  --color-text-bright: #e8f4ff;
+
+  /* Accent colours */
+  --color-blue:   #00aaff;
+  --color-green:  #00ff88;
+  --color-red:    #ff3344;
+  --color-orange: #ff7700;
+  --color-gold:   #ffd700;
+
+  /* Cell state colours */
+  --color-hit:  #ff6b35;
+  --color-sunk: #cc2936;
+  --color-miss: #1e3a5f;
+
+  /* Board */
+  --cell-size: 38px;
+
+  /* Fonts */
+  --font-title: "Orbitron", monospace;
+  --font-mono:  "Share Tech Mono", monospace;
+}
+
+/* ── Shared Button ─────────────────────────────── */
+.btn-primary {
+  background: transparent;
+  border: 2px solid var(--color-blue);
+  color: var(--color-blue);
+  font-family: var(--font-title);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--color-blue);
+  color: var(--bg);
+  box-shadow: 0 0 20px var(--color-blue);
+}
+
+.btn-primary:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ── Responsive cell size ──────────────────────── */
+@media (max-width: 900px) {
+  :root {
+    --cell-size: 30px;
+  }
+}
